@@ -1,0 +1,199 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" >
+
+    <style>
+      body {
+    
+    background:url(Images/backgrounddot.png), linear-gradient(to right ,#020202 0%,#080808d4 100% ) ;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: width=50px;
+    
+   
+   
+    
+  }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Wait until the DOM is fully loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        // Words to cycle through
+        const words = ["Designer","Engineer", "Creator", "Artist"];
+        let currentIndex = 0;
+    
+        // Get the dynamic word element
+        const dynamicWord = document.getElementById("dynamic-word");
+    
+        // Function to change the word
+        function changeWord() {
+          currentIndex = (currentIndex + 1) % words.length; // Cycle through the words
+          dynamicWord.textContent = words[currentIndex];
+        }
+    
+        // Change the word every 5 seconds (5000ms)
+        setInterval(changeWord, 5000);
+      });
+    </script>
+</head>
+<body>
+    
+
+  <div class="main">
+     
+
+  
+
+      <div class="sidenav"><br><br>
+        <a href="index.html"data-bs-toggle="tooltip" title=" Home" data-bs-placement="right" class="glow-image"><img src="Images/HOME.png"> </a>
+        <a href="work.html" data-bs-toggle="tooltip" title=" Work" data-bs-placement="right" class="glow-image" ><img src="Images/Work.png"></a>
+        <a href="Resume.html" data-bs-toggle="tooltip" title=" CV" data-bs-placement="right" class="glow-image"><img src="Images/Resume icon.png"></a>
+        <a href="connect.html" data-bs-toggle="tooltip" title=" Connect" data-bs-placement="right"class="glow-image" ><img src="Images/Connect.png"></a>
+        <a href="fun.html" data-bs-toggle="tooltip" title=" Fun" data-bs-placement="right"class="glow-image" ><img src="Images/Fun inactive.png"></a>
+      </div>
+
+      <div class="container mt-5" style="width: 100%;color: rgb(77, 57, 57);float: left;"  >
+        
+        <div class="d-flex justify-content-between align-items-center" >
+          <div style="margin-left:200px ; width: 2000px;align-content: center;margin-top: 20px;">
+            <div class="glow-image-container">
+              <img class="glow-image"; src="Images/backgroundnew2.png"; width="105%" ; height="auto"; style="z-index: 1;"   >
+            </div>
+            
+            
+            
+          </div>  
+        </div>
+        <!-- A div with text and an image aligned at the end -->
+        <div class="d-flex justify-content-between align-items-center" >
+          <div style="margin-left:50px ; width: 2000px;align-content: center;">
+            <div class="left" style="margin-bottom: 100px; margin-left: 250px;margin-top: 200px;text-align: center;">
+              <div class="glow-image">
+                <h1 style="font-size: 60pt;font-style: italic;font-weight: lighter;color: #A8DAFF;">"Nature is the finest </h1>
+                <div  style="font-size: 60pt;font-style: italic;font-weight: lighter;color: #FFE299"> <span id="dynamic-word">Designer</span>  "</div>
+              </div>
+              
+            </div>
+          </div>  
+        </div>
+           
+       </div>
+      </div>
+
+      <div class="container mt-5" style="width: 90%;color: rgb(77, 57, 57);float: left;" >
+        <div class="glow-image">
+          <h1 style="font-weight: lighter;color: #A8DAFF;margin-left: 250px;text-align: center;margin-top: 80px;margin-bottom: 20px;">Nature and Design </h1>
+        <p style="color: rgb(200, 200, 200);font-size:18pt ;margin-left: 250px;text-align: justify;">
+          Nature is the ultimate designer, effortlessly combining beauty, function, and balance. From the patterns of a leaf to entire ecosystems, every element serves a purpose and works in harmony. Its designs are timeless, sustainable, and adaptive, teaching us that true design is about both aesthetics and purpose.
+        </p>
+        </div>
+        
+      </div>
+
+      <div class="container mt-5" style="width: 90%;color: rgb(77, 57, 57);float: left;margin-bottom: 100px;" >
+        <h1 style="font-weight: lighter;color: #FFE299;margin-left: 250px;text-align: center;margin-bottom: 100px;margin-top: 80px;">Recent Works </h1>
+        <div class="d-flex justify-content-between"  style="background-color: rgba(0, 0, 0, 0);margin-left: 250px;align-items-center" >
+          <div class="glow-image" style="width: 45%;height: 400px;background-image: url(Images/project3.png) ;background-size: contain;background-repeat: no-repeat;border-radius: 8pt;"data-bs-toggle="modal" data-bs-target="#project3Modal">
+            <div style="width: 100%;height:200px;background-color: rgb(54, 53, 53);margin-top: 200px;border-radius: 8pt;border-top-left-radius:0; border-top-right-radius: 0;padding: 20px;border-color: rgb(255, 253, 253);border-color: white;">
+              <h3 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: #FFE299;font-weight: lighter;"> ADHD Interactive mat</h3>
+              <p style="font-size: 12pt;color: rgb(255, 255, 255);"> This project focuses on finding problems related to ADHD kids and develop a Tangible solution for it.</p>
+             
+            </div>
+  
+           </div>
+           <div class="glow-image" style="width: 45%;height: 400px;background-image: url(Images/project2.png) ;background-size: contain;background-repeat: no-repeat;border-radius: 8pt;"data-bs-toggle="modal" data-bs-target="#project2Modal">
+            <div style="width: 100%;height:200px;background-color: rgb(54, 53, 53);margin-top: 200px;border-radius: 8pt;border-top-left-radius:0; border-top-right-radius: 0;padding: 20px;border-color: rgb(197, 197, 197);" >
+              <h3 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: #FFE299;font-weight: lighter;"> Waste Management for food stalls</h3>
+              <p style="font-size: 12pt;color: rgb(255, 255, 255);"> This project focuses on finding problems and limitations in the waste management system for food stalls using data driven design and how can the gaps be addressed.</p>
+              
+            </div>
+  
+           </div>
+          
+         </div>
+      </div>
+
+      <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color:rgb(54, 53, 53) ;">
+              <h5 class="modal-title" id="project3ModalLabel" style="color: white;"> ADHD Interactive mat</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" style="color:rgb(255, 255, 255);"></button>
+            </div>
+            <div class="modal-body p-0" style="padding: 0; margin: 0; overflow: hidden;"> <!-- Removes padding & scroll bars -->
+              <iframe 
+                  src="Images/project3Modal.pdf#toolbar=0" 
+                  width="100%" 
+                  height="100%" 
+                  style="border: none; overflow: hidden;"></iframe>
+          </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color:rgb(54, 53, 53) ;">
+              <h5 class="modal-title" id="project2ModalLabel" style="color: white;">Waste management for Food stalls</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" style="color:rgb(255, 255, 255);"></button>
+            </div>
+            <div class="modal-body p-0" style="padding: 0; margin: 0; overflow: hidden;"> <!-- Removes padding & scroll bars -->
+              <iframe 
+                  src="Images/project2Modal.pdf#toolbar=0" 
+                  width="100%" 
+                  height="100%" 
+                  style="border: none; overflow: hidden;"></iframe>
+          </div>
+            
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="container mt-5" style="width: 90%;color: rgb(255, 255,255);float: left;text-align: center;font-size: 12pt; font-weight: lighter;margin-left: 120px;margin-bottom: 50px;" >
+        
+        <p>This website is part of my UX portfolio, designed from scratch using basic understanding of 
+          <strong>HTML, CSS, Bootstrap, and a bit of JavaScript.</strong></p>
+      
+        
+        
+      </div>
+        
+
+        
+      
+        
+        
+        
+        
+        
+      
+
+      
+  
+
+        
+    </div>
+   
+      
+    
+
+
+    <script>
+      // Initialize tooltips
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+      </script>   
+      
+</body>
+
+</html>
